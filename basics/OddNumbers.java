@@ -15,15 +15,3 @@ public class OddNumbers {
         }
     }
 }
-Enter the starting range:
-5
-Enter the ending range:
-20
-5
-7
-9
-11
-13
-15
-17
-19

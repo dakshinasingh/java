@@ -18,7 +18,4 @@ public class SumOfDigits {
         System.out.println("Sum of digits"+sum);
     }
 }
-output:
-Enter the number
-1234
-Sum of digits10
+
