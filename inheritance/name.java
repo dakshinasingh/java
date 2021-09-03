@@ -47,11 +47,8 @@ class student extends name {
         this.m2=m2;
         this.m3=m3;
     }
-
-    @Override
-    public String toString() {
-        int total=m1+m2+m3;
-        int percentage=total/3;
+    static String result(int percentage)
+    {
         String result="";
         if(percentage>90)
             result="A";
@@ -59,6 +56,13 @@ class student extends name {
             result="B";
         else if(percentage<80)
             result="C";
+        return result;
+    }
+    @Override
+    public String toString() {
+        int total=m1+m2+m3;
+        int percentage=total/3;
+        String result=result(percentage);
         return (super.toString()+"\nrno="+rno +"\ntotal=" +total+ "\npercentage="+percentage+"\nresult="+result);
     }
 }
@@ -96,3 +100,4 @@ total=250
 percentage=83
 result=B
 */
+
